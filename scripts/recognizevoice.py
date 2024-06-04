@@ -13,5 +13,14 @@ with sr.Microphone() as source:
     
     
 
-print(mytext)
-  
+import pyttsx4
+
+# Initialize the engine
+engine = pyttsx4.init()
+
+# Define the text to be spoken
+text = mytext
+rate = engine.getProperty('rate')   # Get the current rate
+engine.setProperty('rate', rate - 50)  # Decrease the rate by 50 words per minute
+engine.say(text)
+engine.runAndWait()
