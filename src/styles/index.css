@@ -1,0 +1,10 @@
+
+
+/* Import custom font */
+@font-face {
+    font-family: "Sailec Bold";
+    src:local("Sailec Bold"), url('../fonts/Sailec Bold.ttf') format("truetype");
+}
+
+
+@import url("boilerplate.css");
