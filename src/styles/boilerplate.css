@@ -7,9 +7,9 @@ Default Class Styles across all pages
 :root {
   --primary-btn: #346bd4;
   --btn-border: 1px solid #79747e;
-  --dark-color: #0b1215;
+  --dark-color: #0C1219;
   --frame-color: #d1d2e7;
-  --black-color: #0b1215;
+  --black-color:#0C1219;
   --white-color: #ffffff;
   --white-bg: #ffffff;
 }
@@ -46,8 +46,8 @@ body {
   padding: 0;
   margin: 0;
   /* font-family: "Plus Jakarta Sans", sans-serif; */
-  background: var(--white-bg);
-  color: var(--black-color);
+  background: var(--black-color);
+  color: var(--white-color);
   counter-reset: count;
   overflow-x: hidden;
 }
