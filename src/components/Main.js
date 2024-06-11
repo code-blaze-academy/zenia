@@ -1,14 +1,12 @@
 import React from 'react';
+import Home from './Home/Home';
 
 
 function Main(props) {
     return (
-        <div>
-            <section>
-           <h2>Welcome to Zenia App</h2>
-           <h3>Welcome to Zenia App</h3>
-         </section>
-        </div>
+        <>
+        <Home/>
+        </>
     );
 }
 

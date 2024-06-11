@@ -1,0 +1,12 @@
+.home-section {
+  border: 1px slid red;
+}
+
+/* ***Hero section */
+.hero-section h1,
+.hero-section h5 {
+  text-align: center;
+}
+.hero-section > * {
+  margin-bottom: 2rem;
+}
