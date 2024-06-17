@@ -1,15 +1,13 @@
 /* ====================================
 Default Class Styles across all pages
 ======================================= */
-/*** Import Google Fonts **/
-@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
   --primary-btn: #346bd4;
   --btn-border: 1px solid #79747e;
-  --dark-color: #0C1219;
+  --dark-color: #0c1219;
   --frame-color: #d1d2e7;
-  --black-color:#0C1219;
+  --black-color: #0c1219;
   --white-color: #ffffff;
   --white-bg: #ffffff;
 }
@@ -46,6 +44,7 @@ body {
   padding: 0;
   margin: 0;
   /* font-family: "Plus Jakarta Sans", sans-serif; */
+  font-family: "Sailec Bold";
   background: var(--black-color);
   color: var(--white-color);
   counter-reset: count;
@@ -62,7 +61,7 @@ h6 {
   font-weight: 700;
   /* margin-bottom: 0.85rem; */
   color: var(--purple);
-  font-family: "Antonio", sans-serif;
+  /* font-family: "Sailec Bold"; */
 }
 h1 {
   line-height: initial;
@@ -82,6 +81,10 @@ h3 {
   font-size: 1.5rem;
   font-weight: 300;
 }
+h5 {
+  font-size: 1.25rem;
+  font-family: "Sailec Medium";
+}
 
 input,
 button {
@@ -96,7 +99,7 @@ img {
 }
 .img-container {
   /* display: inline-block;
-  margin: 0 auto; */
+margin: 0 auto; */
 }
 ul {
   list-style-type: none;
@@ -104,7 +107,6 @@ ul {
   margin: 0;
 }
 p {
-  color: var(--black-color);
   font-size: 1rem;
 }
 section {
@@ -194,15 +196,15 @@ For Desktop Device
     font-size: 4rem;
   }
   h2 {
-    font-family:"Saliec Bold";
     font-size: 3rem;
-    color:red;
+    color: red;
   }
   h3 {
     font-size: 2rem;
   }
   p {
     font-size: 1rem;
+    color: #fff;
   }
   section {
     padding: 2rem 7%;

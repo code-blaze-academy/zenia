@@ -7,6 +7,9 @@
 .hero-section h5 {
   text-align: center;
 }
+.hero-section h5 {
+  color: #808080;
+}
 .hero-section > * {
   margin-bottom: 2rem;
 }

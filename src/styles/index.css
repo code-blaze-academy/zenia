@@ -1,11 +1,63 @@
-
-
 /* Import custom font */
+/* saliec bold */
 @font-face {
-    font-family: "Sailec Bold";
-    src:local("Sailec Bold"), url('../fonts/Sailec Bold.ttf') format("truetype");
+  font-family: "Sailec Bold";
+  src:
+    local("Sailec Bold"),
+    url("../fonts/Sailec Bold.ttf") format("truetype");
+  font-weight: 400;
 }
 
+/* saliec medium */
+@font-face {
+  font-family: "Sailec Medium";
+  src:
+    local("Sailec Medium"),
+    url("../fonts/Sailec Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* saliec light */
+@font-face {
+  font-family: "Sailec Light";
+  src:
+    local("Sailec Medium"),
+    url("../fonts/Sailec Light.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* To be moved somewhere */
+.speech-section .btn-container,
+button {
+  display: inline-block;
+  /* width: 120px; */
+  border-radius: 24px;
+  padding: 0.75rem;
+  color: #000;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.speech-section .btn-container button {
+  border-radius: inherit;
+}
+.speech-section .main-contents {
+  height: 150px;
+  width: 100%;
+  border: 1px solid #ffe;
+  border-radius: 12px;
+  margin: 2rem auto;
+  font-size: 16px;
+  word-spacing: normal;
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+}
+.speech-section .main-contents p {
+  color: #fff;
+}
+.speech-section .btn-style {
+  margin-top: 2rem;
+}
 
 @import url("boilerplate.css");
 @import url("home.css");
