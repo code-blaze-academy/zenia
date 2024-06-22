@@ -10,7 +10,7 @@ function HeroSection(props) {
         modifications
       </h5>
 
-      <Link className="btn-container" to="/record">
+      <Link className="btn-container" to="/register">
         <button className="cta-btn">get started</button>
       </Link>
       <div className="img-container">
