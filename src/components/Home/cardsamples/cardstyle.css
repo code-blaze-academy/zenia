@@ -1,0 +1,39 @@
+/* This is specifically for custom card styles */
+.card {
+  display: inline-block;
+  width: 309px;
+  /* height: 438px; */
+  border-radius: 24px;
+  position: relative;
+  background: linear-gradient(180deg, #0a0a0b 0%, rgba(10, 10, 11, 0) 100%);
+  overflow: hidden;
+}
+.card .top-section {
+  position: relative;
+  padding: 1rem 0 0 1rem;
+}
+.card .top-section .icon-container {
+  cursor: pointer;
+}
+.card_1.middle-section,
+.card_2.middle-section {
+  position: relative;
+  top: calc(-55px - 0.5rem);
+  right: -25px;
+}
+.card_1.bottom-section,
+.card_2.bottom-section {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+}
+
+.card .middle-section .img-container {
+  border-radius: 24px;
+}
+
+/* .prev {
+  border: 1px solid red;
+} */

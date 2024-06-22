@@ -9,7 +9,14 @@
 }
 .hero-section h5 {
   color: #808080;
+  font-weight: 400;
 }
 .hero-section > * {
   margin-bottom: 2rem;
 }
+
+
+/* **Speaker Band Styles */
+/* .speaker-band .box{
+border:a;
+} */

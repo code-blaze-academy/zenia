@@ -3,11 +3,11 @@ Default Class Styles across all pages
 ======================================= */
 
 :root {
-  --primary-btn: #346bd4;
   --btn-border: 1px solid #79747e;
   --dark-color: #0c1219;
   --frame-color: #d1d2e7;
   --black-color: #0c1219;
+  --text-black: #1e1f22;
   --white-color: #ffffff;
   --white-bg: #ffffff;
 }
@@ -43,7 +43,6 @@ a {
 body {
   padding: 0;
   margin: 0;
-  /* font-family: "Plus Jakarta Sans", sans-serif; */
   font-family: "Sailec Bold";
   background: var(--black-color);
   color: var(--white-color);
@@ -55,13 +54,11 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   text-transform: capitalize;
-  font-weight: 700;
-  /* margin-bottom: 0.85rem; */
-  color: var(--purple);
-  /* font-family: "Sailec Bold"; */
+  font-weight: 400;
+  margin-bottom: 0.85rem;
+  font-family: "Sailec Bold";
 }
 h1 {
   line-height: initial;
@@ -85,6 +82,11 @@ h5 {
   font-size: 1.25rem;
   font-family: "Sailec Medium";
 }
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Sailec Bold";
+}
 
 input,
 button {
@@ -107,7 +109,8 @@ ul {
   margin: 0;
 }
 p {
-  font-size: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 section {
   padding: 1.5rem 5%;
@@ -120,14 +123,44 @@ button:not(.toastify-btn) {
   text-transform: capitalize;
   cursor: pointer;
   font-size: 1rem;
+  font-family: "Sailec Medium";
+  font-weight: 400;
+  background: var(--white-color);
 }
+
+.btn-container {
+  text-align: center;
+}
+.btn-container .cta-btn {
+  display: inline-block;
+  /* width: 120px; */
+  border-radius: 24px;
+  padding: 10px 24px;
+  color: var(--text-black);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* 
+.speech-section .main-contents {
+  height: 150px;
+  width: 100%;
+  border: 1px solid #ffe;
+  border-radius: 12px;
+  margin: 2rem auto;
+  font-size: 16px;
+  word-spacing: normal;
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+}
+.speech-section .main-contents p {
+  color: #fff;
+}
+.speech-section .btn-style {
+  margin-top: 2rem;
+} */
 .cta-btn {
   text-align: center;
-  background: var(--primary-btn);
-}
-.secondary-btn {
-  /* background:var(--secondary-btn); */
-  background: var(--dk-brown);
 }
 
 /* ============Form element Stykes========= */
@@ -188,6 +221,12 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 1.5rem;
 }
 
+/* Custom font class */
+.sailec-medium {
+  font-weight: 400;
+  font-family: "Sailec Medium";
+}
+
 /* ==========================
 For Desktop Device
 =============================*/
@@ -197,14 +236,15 @@ For Desktop Device
   }
   h2 {
     font-size: 3rem;
-    color: red;
   }
   h3 {
     font-size: 2rem;
   }
+  h6 {
+    font-size: 1.25rem;
+  }
   p {
     font-size: 1rem;
-    color: #fff;
   }
   section {
     padding: 2rem 7%;
@@ -247,4 +287,7 @@ For Desktop Device
 Large Desktop Device
 ==============================*/
 @media (min-width: 1200px) {
+  h6 {
+    font-size: 1.25rem;
+  }
 }
