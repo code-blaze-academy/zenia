@@ -1,0 +1,65 @@
+/* This styles is written for the Authentication pages */
+.auth-section {
+  display: flex;
+  min-height: 100vh;
+}
+.auth-section h1,
+.auth-section h2 {
+  text-align: center;
+}
+.auth-section h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.auth-section h2 {
+  font-size: 1.25rem;
+  font-family: "Sailec Medium";
+}
+.auth-section .logo {
+  margin-bottom: 8rem;
+}
+.auth-section input {
+  background: #1c1f2580;
+  border: 1px solid #353639;
+}
+.auth-section input::placeholder {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.auth-section .auth-container {
+  flex-basis: 72%;
+  margin: auto;
+}
+.auth-section .btn-container {
+  text-align: initial;
+  margin-bottom: 1.5rem;
+}
+.auth-section .cta-btn {
+  border-radius: 8px;
+  background: #1c1f25;
+  color: #fff;
+  width: 100%;
+}
+
+.auth-section .cta-btn.google-btn {
+  background: #0c8ce9;
+}
+
+/*=================================
+ Desktop  Device
+===================================*/
+@media (min-width: 980px) {
+  .auth-section h1 {
+    font-size: 2.5rem;
+  }
+  .auth-section h2 {
+    font-size: 2rem;
+  }
+  .auth-section input,
+  .auth-section .cta-btn {
+    /* width: 346px; */
+  }
+  .auth-section .auth-container {
+    flex-basis: 48%;
+  }
+}
