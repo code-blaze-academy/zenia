@@ -59,9 +59,9 @@ function Login(props) {
             )}
             <div className="form-footer">
               <p className="text-center">
-                Already have an account{" "}
-                <Link className="inline-block text-[#0c8ce9]" to="/login">
-                  login
+                Do not have an account{" "}
+                <Link className="inline-block text-[#0c8ce9]" to="/register">
+                  sign up
                 </Link>
               </p>
             </div>
