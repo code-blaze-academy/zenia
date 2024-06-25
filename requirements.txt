@@ -1,9 +1,7 @@
-PyAudio
-SpeachRecognition
+# PyAudio
 pocketsphinx
-
+SpeechRecognition
 Django
-django~=4.2
 djangorestframework
 django-filter
 djangorestframework-simplejwt
@@ -23,7 +21,6 @@ pyOpenSSL
 rave-python
 python-decouple
 resend
-psycopg2
 django-environ
 dj-rest-auth
 django-allauth

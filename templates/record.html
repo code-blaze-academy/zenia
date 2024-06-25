@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-time Speech Recognition</title>
+</head>
+<body>
+    <h2>Real-time Speech Recognition</h2>
+    <p>Speak into the microphone:</p>
+    <div id="result"></div>
+    <button id="startButton">Start Recording</button>
+    <button id="stopButton">Stop Recording</button>
+
+    <script>
+        var wsUri = "ws://" + window.location.host + "/ws/speech/";
+        var websocket = new WebSocket(wsUri);
+
+        websocket.onopen = function(evt) {
+            console.log("WebSocket connection established.");
+        };
+
+        websocket.onmessage = function(evt) {
+            var resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = "<p><strong>Recognition Result:</strong> " + evt.data + "</p>";
+        };
+
+        websocket.onerror = function(evt) {
+            console.error('WebSocket error:', evt);
+        };
+
+        document.getElementById('startButton').addEventListener('click', function() {
+            websocket.send('start');
+            console.log('Recording started.');
+        });
+
+        document.getElementById('stopButton').addEventListener('click', function() {
+            websocket.send('stop');
+            console.log('Recording stopped.');
+        });
+    </script>
+</body>
+</html>

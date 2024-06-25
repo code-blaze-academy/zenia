@@ -1,0 +1,984 @@
+Watching for file changes with StatReloader
+[14/Jun/2024 19:13:04] "GET /api/docs/ HTTP/1.1" 200 2161
+[14/Jun/2024 19:13:04] "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+[14/Jun/2024 19:13:05] "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+[14/Jun/2024 19:13:05] "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+[14/Jun/2024 19:13:05] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+[14/Jun/2024 19:13:05] "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+[14/Jun/2024 19:13:13] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+[14/Jun/2024 19:13:45] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+view's SphereViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/sphere.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'SphereViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's CubeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cube.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'CubeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's ConeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cone.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ConeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/rectangle.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RectangleViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's SphereViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/sphere.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'SphereViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's CubeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cube.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'CubeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's ConeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cone.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ConeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/rectangle.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RectangleViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+[14/Jun/2024 19:13:48] "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+view's SphereViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/sphere.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'SphereViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's CubeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cube.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'CubeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's ConeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cone.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ConeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/rectangle.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RectangleViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's SphereViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/sphere.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'SphereViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's CubeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cube.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'CubeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's ConeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cone.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ConeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/rectangle.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RectangleViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+/root/zenia/venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py:142: UserWarning: <class 'zenia_app_root.geometries_management.viewsets.cone.ConeViewset'> is not compatible with schema generation
+  warnings.warn(
+/root/zenia/venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py:142: UserWarning: <class 'zenia_app_root.geometries_management.viewsets.cube.CubeViewset'> is not compatible with schema generation
+  warnings.warn(
+/root/zenia/venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py:142: UserWarning: <class 'zenia_app_root.geometries_management.viewsets.prompt_viewset.MessagePromptViewset'> is not compatible with schema generation
+  warnings.warn(
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+/root/zenia/venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py:142: UserWarning: <class 'zenia_app_root.geometries_management.viewsets.rectangle.RectangleViewset'> is not compatible with schema generation
+  warnings.warn(
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+/root/zenia/venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py:142: UserWarning: <class 'zenia_app_root.geometries_management.viewsets.sphere.SphereViewset'> is not compatible with schema generation
+  warnings.warn(
+[14/Jun/2024 19:13:48] "GET /api/docs/?format=openapi HTTP/1.1" 200 9120
+view's SphereViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/sphere.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'SphereViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's CubeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cube.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'CubeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's ConeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cone.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ConeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/rectangle.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RectangleViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's SphereViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/sphere.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'SphereViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's CubeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cube.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'CubeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's ConeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cone.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ConeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/rectangle.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RectangleViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's SphereViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/sphere.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'SphereViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's CubeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cube.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'CubeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's ConeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cone.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ConeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/rectangle.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RectangleViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's SphereViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/sphere.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'SphereViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's CubeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cube.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'CubeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's ConeViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/cone.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ConeViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/zenia_app_root/geometries_management/viewsets/rectangle.py", line 18, in get_queryset
+    return super().get_queryset()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RectangleViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `queryset` attribute, or override the `get_queryset()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's MessagePromptViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MessagePromptViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+view's RectangleViewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/root/zenia/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+           ^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/rest_framework/generics.py", line 114, in get_serializer
+    return serializer_class(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zenia/venv/lib/python3.11/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Rectangle() got unexpected keyword arguments: 'context'
+[14/Jun/2024 19:13:53] "GET /api/docs/?format=openapi HTTP/1.1" 200 9120
+Not Found: /
+[15/Jun/2024 02:37:52] "GET / HTTP/1.1" 404 4849
+Not Found: /favicon.ico
+[15/Jun/2024 02:38:05] "GET /favicon.ico HTTP/1.1" 404 4905
+Not Found: /
+[15/Jun/2024 23:02:02] "GET / HTTP/1.1" 404 4849
+[16/Jun/2024 02:49:20] code 400, message Bad request version ('À\x14À')
+[16/Jun/2024 02:49:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+[16/Jun/2024 03:03:44,089] - Broken pipe from ('45.79.115.117', 40186)
+Not Found: /
+[16/Jun/2024 03:03:44] "GET / HTTP/1.1" 404 4844
+[16/Jun/2024 03:03:44,357] - Broken pipe from ('45.79.115.117', 40187)
+Not Found: /
+[16/Jun/2024 03:03:55] "GET / HTTP/1.1" 404 4849
+Not Found: /
+[16/Jun/2024 03:56:29] "GET / HTTP/1.1" 404 4849
+Not Found: /favicon.ico
+[16/Jun/2024 03:56:40] "GET /favicon.ico HTTP/1.1" 404 4905
+Not Found: /status
+[16/Jun/2024 16:55:33] "GET /status HTTP/1.1" 404 4885
+Not Found: /aaa9
+[16/Jun/2024 18:40:16] "GET /aaa9 HTTP/1.1" 404 4877
+Not Found: /aab8
+[16/Jun/2024 18:40:16] "GET /aab8 HTTP/1.1" 404 4877
+Not Found: /
+[16/Jun/2024 18:40:17] "GET / HTTP/1.1" 404 4849
+[16/Jun/2024 23:17:06,623] - Broken pipe from ('172.233.14.114', 22745)
+Not Found: /
+[16/Jun/2024 23:17:12] "GET / HTTP/1.0" 404 4852
+Not Found: /
+Not Found: /odinhttpcall1718579832
+[16/Jun/2024 23:17:13] "GET / HTTP/1.0" 404 4852
+[16/Jun/2024 23:17:13] "GET /odinhttpcall1718579832 HTTP/1.1" 404 4949
+Forbidden (CSRF cookie not set.): /sdk
+[16/Jun/2024 23:17:13] "POST /sdk HTTP/1.1" 403 2869
+Not Found: /HNAP1
+[16/Jun/2024 23:17:13] "GET /HNAP1 HTTP/1.1" 404 4881
+Not Found: /evox/about
+[16/Jun/2024 23:17:13] "GET /evox/about HTTP/1.1" 404 4901
+Not Found: /
+[16/Jun/2024 23:17:13] "GET / HTTP/1.0" 404 4852
+Not Found: /
+[16/Jun/2024 23:17:14] "GET / HTTP/1.1" 404 4844
+Not Found: /query
+Not Found: /v2/_catalog
+[16/Jun/2024 23:17:14] "GET /query?q=SHOW+DIAGNOSTICS HTTP/1.1" 404 4900
+[16/Jun/2024 23:17:14] code 400, message Bad request version ('À\x13À')
+[16/Jun/2024 23:17:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[16/Jun/2024 23:17:14] "GET /v2/_catalog HTTP/1.1" 404 4905
+Not Found: /solr/admin/info/system
+Not Found: /
+[16/Jun/2024 23:17:14] "GET /solr/admin/info/system HTTP/1.1" 404 4949
+[16/Jun/2024 23:17:14] "GET / HTTP/1.1" 404 4849
+Not Found: /cgi-bin/authLogin.cgi
+[16/Jun/2024 23:17:14] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 4945
+[16/Jun/2024 23:17:14] code 400, message Bad request version ('À\x13À')
+[16/Jun/2024 23:17:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /solr/admin/cores
+[16/Jun/2024 23:17:14] "GET /solr/admin/cores?action=STATUS&wt=json HTTP/1.1" 404 4951
+[16/Jun/2024 23:17:14] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03o®\x06Ç\x87`o:ç,·\x99ÐÎ\x8ff\x17¼<5ý\x0f\x07\x86')
+[16/Jun/2024 23:17:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /favicon.ico
+[16/Jun/2024 23:17:16] "GET /favicon.ico HTTP/1.1" 404 4905
+[16/Jun/2024 23:17:45] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01$\x01\x00\x01')
+[16/Jun/2024 23:17:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[17/Jun/2024 01:26:05] "GET / HTTP/1.1" 404 4849
+Not Found: /favicon.ico
+[17/Jun/2024 01:26:22] "GET /favicon.ico HTTP/1.1" 404 4905
+Not Found: /
+[17/Jun/2024 09:21:20] "GET / HTTP/1.1" 404 4849
+Not Found: /
+[17/Jun/2024 11:47:28] "GET / HTTP/1.1" 404 4849
+Not Found: /
+[17/Jun/2024 19:16:42] "GET / HTTP/1.1" 404 4849
+Not Found: /
+[18/Jun/2024 01:55:55] "GET / HTTP/1.1" 404 4849
+Not Found: /
+[18/Jun/2024 12:20:47] "GET / HTTP/1.1" 404 4849
+Not Found: /favicon.ico
+[18/Jun/2024 12:20:55] "GET /favicon.ico HTTP/1.1" 404 4905
+Not Found: /
+[18/Jun/2024 18:49:12] "GET / HTTP/1.1" 404 4849
+Not Found: /
+[18/Jun/2024 18:50:39] "GET / HTTP/1.1" 404 4849
+Not Found: /
+[18/Jun/2024 22:22:09] "GET / HTTP/1.1" 404 4849
+Not Found: /
+[19/Jun/2024 03:03:13] "GET / HTTP/1.1" 404 4849
+Not Found: /
+[19/Jun/2024 07:56:52] "GET / HTTP/1.1" 404 4849
+Not Found: /favicon.ico
+[19/Jun/2024 07:57:04] "GET /favicon.ico HTTP/1.1" 404 4905
+Not Found: /
+[19/Jun/2024 12:19:44] "GET / HTTP/1.1" 404 4844
+[19/Jun/2024 12:19:45,261] - Broken pipe from ('118.193.45.235', 60456)
+[19/Jun/2024 12:19:45] code 400, message Bad request version ('À\x13À')
+[19/Jun/2024 12:19:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[19/Jun/2024 12:19:46] code 400, message Bad HTTP/0.9 request type ('t3')
+[19/Jun/2024 12:19:46] "t3 12.1.2" 400 -
+[19/Jun/2024 16:20:05] code 400, message Bad HTTP/0.9 request type ('\x04\x01\x00\x194e')
+[19/Jun/2024 16:20:05] " 4e " 400 -
+[19/Jun/2024 16:21:05] code 400, message Bad request syntax ('\x05\x01\x00')
+[19/Jun/2024 16:21:05] " " 400 -
+Not Found: /hotmail-com.olc.protection.outlook.com:25
+[19/Jun/2024 16:21:05] "CONNECT hotmail-com.olc.protection.outlook.com:25 HTTP/1.1" 404 2000
+[19/Jun/2024 18:50:07] code 400, message Bad request syntax ('\x04\x01\x00PPBS1\x00')
+[19/Jun/2024 18:50:07] " PPBS1 " 400 -
+[19/Jun/2024 18:51:08] code 400, message Bad request syntax ('\x05\x01\x00')
+[19/Jun/2024 18:51:08] " " 400 -
+Not Found: /80.66.83.49:80
+[19/Jun/2024 18:51:08] "CONNECT 80.66.83.49:80 HTTP/1.1" 404 1892
+Not Found: /
+[19/Jun/2024 20:45:34] "GET / HTTP/1.1" 404 4849
+[20/Jun/2024 02:34:01] code 400, message Bad request version ('À\x14À')
+[20/Jun/2024 02:34:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[20/Jun/2024 04:13:52] "GET / HTTP/1.1" 404 4849
+Not Found: /favicon.ico
+[20/Jun/2024 04:14:04] "GET /favicon.ico HTTP/1.1" 404 4905
+[20/Jun/2024 13:26:16] code 400, message Bad request version ('ÑßQz+vL\x9e\x05@,ªÈ&\x99ºG')
+[20/Jun/2024 13:26:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[20/Jun/2024 13:26:27] "GET / HTTP/1.1" 404 4849
+Not Found: /favicon.ico
+[20/Jun/2024 13:26:46] "GET /favicon.ico HTTP/1.1" 404 4905
+Not Found: /robots.txt
+[20/Jun/2024 13:26:47] "GET /robots.txt HTTP/1.1" 404 4901
+Not Found: /sitemap.xml
+[20/Jun/2024 13:26:47] "GET /sitemap.xml HTTP/1.1" 404 4905
+[20/Jun/2024 13:44:48] code 400, message Bad request version ('À\x13À')
+[20/Jun/2024 13:44:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[20/Jun/2024 14:02:06] code 400, message Bad request version ('@&pÐÉ3\x89<r«ø7¾±q\x83~|ÿ?')
+[20/Jun/2024 14:02:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[20/Jun/2024 16:08:27] code 400, message Bad request version ('À\x13À')
+[20/Jun/2024 16:08:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[20/Jun/2024 18:53:08] "GET / HTTP/1.1" 404 4849

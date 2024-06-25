@@ -41,6 +41,13 @@ urlpatterns = [
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('api/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('',include(('zenia_app_root.voice_recognition.routers','zenia_app_root.voice_recognition'))),
+    #  path('blender/', include('zenia_app_root.geometries_management.urls')),
+    path('',include(('zenia_app_root.geometries_management.routers.sphere','zenia_app_root.geometries_management'))),
+    path('',include(('zenia_app_root.geometries_management.routers.cube'))),
+    path('',include(('zenia_app_root.geometries_management.routers.cone'))),
+    path('',include(('zenia_app_root.geometries_management.routers.rectangle'))),
+    path('',include(('zenia_app_root.geometries_management.routers.message_prompt','zenia_app_root.geometries_management.routers'))),
+
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
 if settings.DEBUG:
