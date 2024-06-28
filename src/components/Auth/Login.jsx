@@ -65,6 +65,16 @@ function Login(props) {
                 </Link>
               </p>
             </div>
+            <div className="animated-video">
+              <div className="video-container">
+                <video
+                  src={`/assets/videos/auth-animation.mp4`}
+                  loop={true}
+                  autoPlay={true}
+                  muted={true}
+                ></video>
+              </div>
+            </div>
           </form>
         </div>
       </div>
