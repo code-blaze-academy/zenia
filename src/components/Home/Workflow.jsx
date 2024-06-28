@@ -4,7 +4,12 @@ import EqualizerAudio from "../shared/EqualizerAudio";
 function Workflow(props) {
   return (
     <section className="workflow">
-      <div className="wrapper">
+      <div
+        className="wrapper"
+        data-aos="fade-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+      >
         <h6 className="text-left flex items-center justify-start gap-2">
           <span>
             <EqualizerAudio />
@@ -21,7 +26,12 @@ function Workflow(props) {
         </div>
       </div>
       <div className="flex-container-2">
-        <div className="flex-item ">
+        <div
+          className="flex-item "
+          data-aos="fade-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
           <figure className="flex-card">
             <div className="top-section">
               <div className="img-container">
@@ -43,7 +53,12 @@ function Workflow(props) {
             </div>
           </figure>
         </div>
-        <div className="flex-item">
+        <div
+          className="flex-item"
+          data-aos="fade-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
           <figure className="flex-card">
             <div className="top-section">
               <div className="img-container">

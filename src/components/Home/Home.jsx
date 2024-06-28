@@ -7,10 +7,12 @@ import Workflow from "./Workflow";
 import Products from "./Products";
 import Ourcommunity from "./Ourcommunity";
 import Experience from "./Experience";
+import Header from "../Header/Header";
 
 function Home({ products }) {
   return (
     <div calssName="home-section">
+      <Header />
       <HeroSection />
       <CreateLayout />
       <CADForDesigners />

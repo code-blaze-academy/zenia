@@ -5,7 +5,12 @@ function Experience(props) {
   return (
     <section>
       <div className="flex-container-2 items-start mb-24">
-        <div className="flex-item">
+        <div
+          className="flex-item"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
           <div className="wrapper">
             <h6 className="text-left flex items-center justify-start gap-2">
               <span>
@@ -25,7 +30,12 @@ function Experience(props) {
             </div>
           </div>
         </div>
-        <div className="flex-item">
+        <div
+          className="flex-item"
+          data-aos="fade-down"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
           <div className="img-container">
             <img src={`/assets/images/experience-img.svg`} alt="let's create" />
           </div>

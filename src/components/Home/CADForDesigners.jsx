@@ -47,7 +47,12 @@ function CADForDesigners(props) {
   };
   return (
     <section>
-      <div className="wrapper">
+      <div
+        className="wrapper"
+        data-aos="fade-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+      >
         <h6 className="text-left flex items-center justify-start gap-2">
           <span>
             <EqualizerAudio />

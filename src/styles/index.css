@@ -30,3 +30,7 @@
 @import url("boilerplate.css");
 @import url("home.css");
 @import url("auth.css");
+@import url("testi-card.css");
+
+/* Dashboard */
+@import url("./dashboard/index.css");

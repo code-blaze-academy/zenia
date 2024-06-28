@@ -1,0 +1,8 @@
+/* Testimonial Card Styles */
+.testi-card-container {
+  background: #1c1f25;
+  border-radius: 16px;
+}
+.testi-card-container .testi-card {
+  border-radius: inherit;
+}

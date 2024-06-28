@@ -2,6 +2,17 @@
 .auth-section {
   display: flex;
   min-height: 100vh;
+  position: relative;
+}
+.auth-section::before {
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 150px;
+  border: 2px solid green;
+  content:""; */
 }
 .auth-section h1,
 .auth-section h2 {
@@ -43,6 +54,16 @@
 
 .auth-section .cta-btn.google-btn {
   background: #0c8ce9;
+}
+.auth-section .cta-btn.google-btn span {
+  position: relative;
+}
+.auth-section .cta-btn.google-btn span::before {
+  position: absolute;
+  top: 0;
+  left: -24px;
+  display: inline-block;
+  content: url(../../public/assets/icons/google-icon.svg);
 }
 
 /*=================================
