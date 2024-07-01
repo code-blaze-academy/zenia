@@ -41,3 +41,10 @@ class Cone(models.Model):
 
     def __str__(self):
         return f"Cone with radius {self.radius} and height {self.height}"
+    
+class MessagePromptModel(models.Model):
+    message_body=models.TextField(null=True,blank=True)
+    
+    def __str__(self):
+        return str(self.message_body)
+    

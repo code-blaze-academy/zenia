@@ -27,3 +27,5 @@ django-allauth
 six
 pyttsx4
 assemblyai
+channels
+cadquery
