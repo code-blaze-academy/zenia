@@ -1,0 +1,112 @@
+/* =============Mobile Styles====== */
+
+/* ===============================
+General Styles
+================================== */
+.dashboard-home {
+  background: #d2d2d2;
+}
+
+/* ==================================
+Grid - 2
+===================================== */
+
+.index-screen button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #353639;
+  color: #fff;
+}
+
+/* ****Grid 2 */
+.grid-2 {
+  height: 100%;
+}
+
+/* ==================================
+***Index Screen**
+Side Menu
+===================================== */
+
+.side-menu {
+  background: #1b1b1c;
+  border-radius: 8px;
+  height: 100%;
+}
+.side-menu .bottom-section {
+  border-top: 1px solid #353639;
+}
+.side-menu .initial {
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+}
+.side-menu button {
+  width: 100%;
+  text-align: initial;
+}
+.side-menu button.hide-scene,
+.side-menu button.hide-scene span {
+  position: relative;
+}
+.side-menu button.hide-scene span::before {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  content: url(../../../public/assets/icons/scan-icon.svg);
+}
+.side-menu button.hide-scene::after {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 25px;
+  content: url(../../../public/assets/icons/arrow-down.svg);
+  transform: translate(-0%, 50%);
+}
+.side-menu button.hide-scene.active::after {
+  transform: translate(0%, 25%) rotate(180deg);
+}
+
+/* ==================================
+***Index Screen**
+Main Menu
+===================================== */
+.main-menu {
+  /* display: flex; */
+}
+.main-menu .menu-contents {
+  /* border: 1px solid green;
+  flex-basis: 82%;
+  margin-left: auto; */
+}
+.main-menu .audio-speaker {
+  border: 2px solid #00617f;
+}
+.main-menu .audio-speaker .bottom-section {
+  border-radius: 0 0 12px 12px;
+  line-height: 45px;
+}
+
+/* ====================Desktop Styles============= */
+@media (min-width: 980px) {
+  /* ==================================
+Grid - 2
+===================================== */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: minmax(0, 275px) 1fr;
+    /* grid-template-columns: fit-content(275px) 1fr; */
+    gap: 1.2rem;
+  }
+  .grid-2 > * {
+    /* border: 1px solid red; */
+  }
+  .main-menu {
+    display: flex;
+  }
+  .main-menu .menu-contents {
+    flex-basis: 82%;
+    margin-left: auto;
+  }
+}

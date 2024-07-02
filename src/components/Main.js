@@ -10,8 +10,8 @@ import Speech from "./Recorder/Speech";
 import Register from "./Auth/Register";
 import Login from "./Auth/Login";
 import { Data } from "./shared/Data";
-import DashboarHome from "./Dashboard/DashboarHome";
-
+import DashboarHome from "./Dashboard/Home/DashboarHome";
+import IndexScreen from "./Dashboard/Screens/IndexScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,7 +22,8 @@ const router = createBrowserRouter(
       <Route path="login" element={<Login />} />
 
       {/* Dashboard Home */}
-      <Route path="dashboard" element={<DashboarHome />} />
+      <Route path="dashboard" element={<DashboarHome />}></Route>
+      <Route path="/dashboard/new-screen" element={<IndexScreen />}></Route>
     </>,
   ),
 );
