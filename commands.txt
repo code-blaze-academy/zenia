@@ -1,2 +1,2 @@
 sudo apt -y install libsm6
-pip install nptyping==2.6.1
+pip install nptyping==2.5.0

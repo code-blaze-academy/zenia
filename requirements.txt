@@ -28,4 +28,5 @@ six
 pyttsx4
 assemblyai
 channels
+pytts3
 cadquery

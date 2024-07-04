@@ -44,9 +44,10 @@ urlpatterns = [
     #  path('blender/', include('zenia_app_root.geometries_management.urls')),
     path('',include(('zenia_app_root.geometries_management.routers.sphere','zenia_app_root.geometries_management'))),
     path('',include(('zenia_app_root.geometries_management.routers.cube'))),
-    path('',include(('zenia_app_root.geometries_management.routers.chair'))),
-    path('',include(('zenia_app_root.geometries_management.routers.gear'))),
+  
     path('',include(('zenia_app_root.geometries_management.routers.rectangle'))),
+    path('',include(('zenia_app_root.geometries_management.router'))),
+    
     path('',include(('zenia_app_root.geometries_management.routers.message_prompt','zenia_app_root.geometries_management.routers'))),
 
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
