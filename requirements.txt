@@ -31,3 +31,4 @@ channels
 pyttsx4
 cadquery
 setuptools==70.2.0
+cadquery-ocp
