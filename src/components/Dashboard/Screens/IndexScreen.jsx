@@ -1,10 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SideMenu from "../shared/SideMenu";
 import EditFeatures from "../shared/EditFeatures";
-// import RecordLabel from "../../icons/RecordLabel";
 import AudioSpeaker from "../shared/AudioSpeaker";
+import Scene from "../shared/RotatingCube";
+import STLViewer from "../helper/StlViewer";
+// import STLRender from "../helper/StlViewer";
+
+// import use3DAssets from "../helper/fetch3DAssets";
 
 function IndexScreen(props) {
+  const [assetData, setAssetData] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleAssetData = async (message) => {
+    const payload = {
+      message_body: message,
+    };
+    setLoading(true);
+    const url = `http://192.81.210.127:2222/prompt/message/`;
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      const {
+        data: { status, stl_url },
+      } = await response.json();
+      setAssetData(stl_url);
+      localStorage.setItem("stl_url", stl_url);
+      setLoading(false);
+
+      // check if the response was not okay
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+    } catch (err) {
+      if (err.message === "Failed to fetch") {
+        setAssetData(err.message);
+        setLoading(false);
+      }
+    }
+  };
+  // console.log(assetData);
+  // handleAssetData("mary gear");
+  const readFile = `${process.env.PUBLIC_URL}/downloads/gear.stl`;
+  console.log(readFile);
   return (
     <div className="index-screen screen-wrapper lg:h-screen bg-[#D2D2D2]">
       <div className="grid-2 p-2 pt-8">
@@ -12,8 +55,8 @@ function IndexScreen(props) {
           <SideMenu />
         </div>
         <div className="grid-item main-menu">
-          <div className="menu-contents p-4 relative">
-            <div className="top-section">
+          <div className="menu-contents p-2 relative">
+            <div className="top-section mb-4">
               <div className="flex items-center justify-end gap-20">
                 <div className="flex-item">
                   <EditFeatures />
@@ -26,7 +69,15 @@ function IndexScreen(props) {
                 </div>
               </div>
             </div>
-            <div className="bottom-section">
+            <div className="middle-section flex justify-center items-center">
+              {/* <div className="section-wrapper h-[100%]">
+                <Scene />
+                <STLViewer />
+              </div> */}
+              {loading ? <Scene /> : assetData}
+              {/* <STLViewer /> */}
+            </div>
+            <div className="bottom-section absolute bottom-0 right-0">
               {/* <div className="flex  gap-4 items-end absolute bottom-4 right-4">
                 <div className="flex-item">
                   <div className="audio-speaker relative h-[124px] w-[306px] rounded-[12px] bg-[#E8EAED]">
@@ -47,7 +98,7 @@ function IndexScreen(props) {
                   </div>
                 </div>
               </div> */}
-              <AudioSpeaker />
+              <AudioSpeaker handleAssetData={handleAssetData} />
             </div>
           </div>
         </div>

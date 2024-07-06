@@ -1,4 +1,65 @@
-
-
 @import url("dashboardHome.css");
 @import url("sideMenu.css");
+
+/* Home dashboard Styles */
+.dashboard-index {
+  /* border: 1px solid yellow; */
+}
+
+/* Overidding Existing Files */
+.dashboard-index .grid-2 {
+  gap: 0.5rem;
+  background: #0c0d0f;
+}
+.dashboard-index .grid-2 > * {
+  background: #121212;
+  border-radius: 12px;
+}
+.dashboard-index .home-menu section {
+  padding: 1rem 2%;
+}
+
+/* Side Menu */
+.dashboard-index .side-menu a {
+  /* align-content: center; */
+  align-content: flex-end;
+  margin-bottom: 1rem;
+}
+.dashboard-index .side-menu a.active {
+  background: #085d9b;
+}
+
+.dashboard-index .side-menu .top-section {
+  padding: 0;
+}
+.dashboard-index .side-menu .bottom-section {
+  border-top: none;
+}
+
+/* Home Menu Styles */
+.dashboard-index .home-menu .flex-wrapper > * {
+  /* border: 1px solid red; */
+}
+.dashboard-index .home-menu button {
+  border-radius: 8px;
+}
+.dashboard-index .home-menu button.active {
+  background: #085d9b;
+  color: #fff;
+}
+.dashboard-index .home-menu .form-field input {
+  background: #1b1b1c;
+  border: 1px solid #353537;
+  text-indent: 1.8rem;
+}
+.dashboard-index .home-menu .form-field::before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  transform: translate(-0%, 50%);
+  content: url(../../../public/assets/icons/search-icon.svg);
+  /* width: 100%; */
+  display: inline-block;
+  z-index: 1020;
+  cursor: pointer;
+}

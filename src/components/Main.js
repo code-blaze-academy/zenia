@@ -12,6 +12,7 @@ import Login from "./Auth/Login";
 import { Data } from "./shared/Data";
 import DashboarHome from "./Dashboard/Home/DashboarHome";
 import IndexScreen from "./Dashboard/Screens/IndexScreen";
+import Scene from "./Dashboard/Home/SceneTemp";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,7 +23,10 @@ const router = createBrowserRouter(
       <Route path="login" element={<Login />} />
 
       {/* Dashboard Home */}
-      <Route path="dashboard" element={<DashboarHome />}></Route>
+      <Route path="dashboard" element={<DashboarHome />}>
+      </Route>
+      <Route path="scene/:id" element={<Scene />}></Route>
+
       <Route path="/dashboard/new-screen" element={<IndexScreen />}></Route>
     </>,
   ),

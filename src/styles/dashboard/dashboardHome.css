@@ -7,6 +7,18 @@ General Styles
   background: #d2d2d2;
 }
 
+
+
+
+/* =================================== 
+
+======================================*/
+
+
+
+
+
+
 /* ==================================
 Grid - 2
 ===================================== */
@@ -74,15 +86,100 @@ Main Menu
 ===================================== */
 .main-menu {
   /* display: flex; */
+  height: 100%;
 }
 .main-menu .menu-contents {
-  /* border: 1px solid green;
-  flex-basis: 82%;
-  margin-left: auto; */
+  height: 100%;
+}
+
+/* Edit Features Section */
+.main-menu .edit-bar {
+  background: #1b1b1c;
+  border-radius: 12px;
+  padding: 10px 8px;
+}
+.main-menu .edit-bar .flex-item {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.main-menu .edit-bar .ml-0 {
+  margin-left: 0 !important;
+}
+.main-menu .edit-bar .flex-item + .flex-item {
+  position: relative;
+}
+.main-menu .edit-bar .flex-item + .flex-item::before {
+  position: absolute;
+  top: 0;
+  left: calc(-1rem - 3px);
+  content: "";
+  height: 18px;
+  line-height: 18px;
+  width: 3px;
+  margin-left: 1rem;
+  border-radius: 12px;
+  background: #353639;
+  transform: translate(-0%, 100%);
+}
+.main-menu .edit-bar .bar-item {
+  min-width: 44px;
+  /* min-height: 42px; */
+  text-align: center;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background: #1e1f22;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+.main-menu .edit-bar .bar-item.gray-bg {
+  background: #353639;
+}
+
+/* .main-menu .edit-bar .bar-item button + .bar-item button {
+  border-left: 3px solid #353639;
+  border-radius: 12px;
+} */
+.main-menu .edit-bar button {
+  background: transparent;
+  padding: 10px 12px;
+}
+.main-menu .edit-bar button.export-btn {
+}
+
+.main-menu .middle-section {
+  /* border: 2px solid #d1d2e7; */
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.15);
+  height: 250px;
+  border-radius: 8px;
+}
+.main-menu .middle-section > * {
+  border-radius: inherit;
 }
 .main-menu .audio-speaker {
   border: 2px solid #00617f;
 }
+/* ===========Top Section========== */
+.main-menu .audio-speaker .top-section {
+  position: relative;
+  z-index: 1;
+  height: calc(124px - 54px);
+  overflow: auto;
+}
+.main-menu .audio-speaker .top-section::-webkit-scrollbar {
+  height: 5px;
+  width: 4px;
+}
+
+.main-menu .audio-speaker .top-section::-webkit-scrollbar-thumb {
+  background: #353639;
+  border-radius: 12px;
+}
+
+/* ========Middle Section============= */
+
+/* ========bottom Section============= */
 .main-menu .audio-speaker .bottom-section {
   border-radius: 0 0 12px 12px;
   line-height: 45px;
@@ -103,10 +200,7 @@ Grid - 2
     /* border: 1px solid red; */
   }
   .main-menu {
-    display: flex;
-  }
-  .main-menu .menu-contents {
-    flex-basis: 82%;
-    margin-left: auto;
+    /* display: flex; */
+    /* height:100%; */
   }
 }
