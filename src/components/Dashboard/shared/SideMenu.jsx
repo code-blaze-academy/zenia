@@ -11,11 +11,11 @@ function SideMenu(props) {
         <div className="flex gap-2 items-center p-4 mb-2">
           <div className="flex-item">
             <p className="initial uppercase w-[36px] h-[36px] bg-[#ffcd29] sailec-medium">
-              u
+              s
             </p>
           </div>
           <div className="flex-item">
-            <p className="username capitalize sailec-medium">username</p>
+            <p className="username capitalize sailec-medium">Solomon</p>
           </div>
         </div>
         <div className="btn-container">

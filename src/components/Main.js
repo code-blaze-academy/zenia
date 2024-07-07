@@ -12,7 +12,9 @@ import Login from "./Auth/Login";
 import { Data } from "./shared/Data";
 import DashboarHome from "./Dashboard/Home/DashboarHome";
 import IndexScreen from "./Dashboard/Screens/IndexScreen";
-import Scene from "./Dashboard/Home/SceneTemp";
+import Tutorials from "./Dashboard/Home/Tutorials";
+import Projects from "./Dashboard/Home/Projects";
+import Folder from "./Dashboard/Folders/Folder";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,9 +25,10 @@ const router = createBrowserRouter(
       <Route path="login" element={<Login />} />
 
       {/* Dashboard Home */}
-      <Route path="dashboard" element={<DashboarHome />}>
-      </Route>
-      <Route path="scene/:id" element={<Scene />}></Route>
+      <Route path="dashboard" element={<DashboarHome />}></Route>
+      <Route path="/dashboard/learn" element={<Tutorials />} />
+      <Route path="/dashboard/projects" element={<Projects />} />
+      <Route path="/dashboard/projects/folder/:id" element={<Folder />}></Route>
 
       <Route path="/dashboard/new-screen" element={<IndexScreen />}></Route>
     </>,

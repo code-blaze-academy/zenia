@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import DashboarHome from "../Home/DashboarHome";
 
-const Scene = () => {
+const Folder = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [projectItems, setProjectItems] = useState(fetchMenuItems);
-  const [sceneItem, setSceneItem] = useState({});
+  const [projectItem, setProjectItem] = useState({});
   const [content, setContent] = useState("");
 
   useEffect(() => {
     const savedMenuItems = JSON.parse(localStorage.getItem("projectItems"));
-    const getSceneItem = savedMenuItems.find(
-      (item) => item.type === "scene" && item.id === parseInt(id),
+    const getProjectItem = savedMenuItems.find(
+      (item) => item.type === "folder" && item.id === parseInt(id),
     );
-    setSceneItem(getSceneItem);
+    setProjectItem(getProjectItem);
     // setContent(getSceneItem.name);
   }, []);
 
@@ -30,26 +31,26 @@ const Scene = () => {
   };
 
   return (
-    <div className="scene">
-      <button onClick={() => navigate(-1)}>Back to Dashboard</button>
-      <h2>{sceneItem?.name} </h2>
-      <textarea
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
-        rows="10"
-        cols="50"
-        style={{ color: "#000", padding: "1rem" }}
+    <div className="folder">
+      {/* <button onClick={() => navigate(-1)}>Back to Dashboard</button> */}
+      {/* <h2>{sceneItem?.name} </h2> */}
+      <DashboarHome
+        heading={projectItem?.name}
+        children={`No ${projectItem?.name} Projects Yet!`}
       />
-      <button
-        onClick={() => {
-          deleteFile(parseInt(id));
-          navigate(-1);
-        }}
-      >
-        delete scene
-      </button>
+      <div className="btn-container flex justify-end">
+        <button
+          onClick={() => {
+            deleteFile(parseInt(id));
+            navigate(-1);
+          }}
+          style={{ background: "#f00", color: "#fff" }}
+        >
+          delete folder
+        </button>
+      </div>
     </div>
   );
 };
 
-export default Scene;
+export default Folder;

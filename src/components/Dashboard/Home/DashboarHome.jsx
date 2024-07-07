@@ -1,62 +1,88 @@
-import React from "react";
-import SideMenu from "../shared/SideMenu";
-import HomeSideMenu from "./HomeSideMenu";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import HomeSideMenu from "./HomeSideMenu";
+import Modal from "../Modal/Modal";
+import DashboardHeader from "./DashboardHeader";
 
-function DashboarHome(props) {
+function DashboarHome({ heading, children }) {
+  // Create folder and Save it Script
+  const [projectItems, setProjectItems] = useState(getProjectItems);
+  const [sceneCount, setSceneCount] = useState(getSavedCounts);
+
+  // fuction get menu items
+  function getProjectItems() {
+    const savedMenus = JSON.parse(localStorage.getItem("projectItems"));
+    return savedMenus || [{ name: "", type: "static" }];
+  }
+
+  function getSavedCounts() {
+    const savedSceneCount = parseInt(localStorage.getItem("sceneCount"), 10);
+    // if (!isNaN(savedSceneCount)) {
+    //   return savedSceneCount;
+    // }
+    return savedSceneCount || 0;
+  }
+
+  useEffect(() => {
+    localStorage.setItem("projectItems", JSON.stringify(projectItems));
+    localStorage.setItem("sceneCount", sceneCount.toString());
+  }, [projectItems, sceneCount]);
+
+  const addFolder = (title) => {
+    setSceneCount((prevCount) => prevCount + 1);
+    setProjectItems((prevItems) => [
+      ...prevItems,
+      { name: title || `New Folder`, type: "folder", id: sceneCount },
+    ]);
+  };
+
+  // States and modules
+  const [modal, setModal] = useState(false);
+  const [activeLink, setActiveLink] = useState();
+  // Handle side menu active link
+  const handleActiveSideMenuLink = (e) => {
+    if (!e.target.classList.contains("active")) {
+      // Remove active class from all items
+      document.querySelectorAll(".link-item").forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      // Add active class to the clicked button
+      e.target.classList.add("active");
+    }
+  };
+
+  //set the modal state
+  const toggleModal = () => {
+    setModal((prev) => !prev);
+  };
+
   const navigate = useNavigate();
   return (
     <div className="dashboard-index dashboard-container lg:h-screen">
       <div className="grid-2 p-2">
         <div className="grid-item side-menu">
-          <HomeSideMenu />
+          <HomeSideMenu
+            handleActiveSideMenuLink={handleActiveSideMenuLink}
+            addFolder={addFolder}
+            projectItems={projectItems}
+          />
         </div>
         <div className="grid-item home-menu">
           <div className="home-menu-container">
-            <section className="header-section">
-              <div className="flex flex-row items-center">
-                <div className="flex-item basis-[22%] mr-auto">
-                  <h5 className="mb-0">home</h5>
-                </div>
-                <div className="flex-item basis-[72%]">
-                  <div className="flex-wrapper flex gap-[4%] ">
-                    <div className="flex-item basis-[48%]">
-                      <form>
-                        <div className="form-field">
-                          <input type="search" placeholder="Search" />
-                          {/* <span className="search-icon-content absolute top-0 left-20 text-[#000]">
-                            Search
-                          </span> */}
-                        </div>
-                      </form>
-                    </div>
-                    <div className="flex-item basis-[48%] flex gap-[4%]">
-                      <div className="btn-container">
-                        <button
-                          className="active"
-                          onClick={() => {
-                            navigate("/dashboard/new-screen");
-                          }}
-                        >
-                          <span>new file</span>
-                        </button>
-                      </div>
-                      <div className="btn-container">
-                        <button>
-                          <span>new folder</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <DashboardHeader
+              modal={modal}
+              toggleModal={toggleModal}
+              navigate={navigate}
+              heading={heading}
+            />
             <section className="body-section">
-              <p>No History yet!</p>
+              {children || "No History yet!"}
             </section>
           </div>
         </div>
       </div>
+      {/* add the modal */}
+      <Modal modal={modal} toggleModal={toggleModal} addFolder={addFolder} />
     </div>
   );
 }

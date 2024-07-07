@@ -28,6 +28,9 @@
 .dashboard-index .side-menu a.active {
   background: #085d9b;
 }
+.dashboard-index .nested-side-menu li a {
+  padding-left: 6.5rem;
+}
 
 .dashboard-index .side-menu .top-section {
   padding: 0;
@@ -40,10 +43,10 @@
 .dashboard-index .home-menu .flex-wrapper > * {
   /* border: 1px solid red; */
 }
-.dashboard-index .home-menu button {
+.dashboard-index button {
   border-radius: 8px;
 }
-.dashboard-index .home-menu button.active {
+.dashboard-index button.active {
   background: #085d9b;
   color: #fff;
 }
@@ -60,6 +63,6 @@
   content: url(../../../public/assets/icons/search-icon.svg);
   /* width: 100%; */
   display: inline-block;
-  z-index: 1020;
+  z-index: 998;
   cursor: pointer;
 }
