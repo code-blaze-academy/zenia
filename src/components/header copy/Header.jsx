@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from "./NavBar";
+import Navbar from "./Navbar";
 
-function Header(props) {
+function Header({ banner }) {
   return (
     <header className="header-container">
-      <NavBar />
+      <Navbar />
     </header>
   );
 }

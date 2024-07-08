@@ -1,20 +1,16 @@
 /* This styles is written for the Authentication pages */
+.auth-wrapper {
+  background: linear-gradient(180deg, #0c0d0f 0%, #011532 74.29%);
+  min-height: 100vh;
+}
 .auth-section {
   display: flex;
-  min-height: 100vh;
+  /* height: 450px; */
   position: relative;
+  background: linear-gradient(180deg, #0c0d0f 0%, #011532 74.29%);
+  margin-bottom: 0 !important;
 }
-.auth-section .animated-video {
-  position: absolute;
-  /* height: 40px; */
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-.auth-section .video-container {
-  /* position: absolute; */
-}
+
 .auth-section h1,
 .auth-section h2 {
   text-align: center;
@@ -48,7 +44,7 @@
 }
 .auth-section .cta-btn {
   border-radius: 8px;
-  background: #1c1f25;
+  background: #08101b;
   color: #fff;
   width: 100%;
 }
@@ -65,6 +61,13 @@
   left: -24px;
   display: inline-block;
   content: url(../../public/assets/icons/google-icon.svg);
+}
+.animated-video {
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  /* top: 100%; */
 }
 
 /*=================================
@@ -83,5 +86,9 @@
   }
   .auth-section .auth-container {
     flex-basis: 48%;
+  }
+  .animated-video {
+    top: 70%;
+    z-index: -1;
   }
 }

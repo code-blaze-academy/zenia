@@ -28,6 +28,7 @@
 
 /* Import Custom Styles */
 @import url("boilerplate.css");
+@import url("header.css");
 @import url("home.css");
 @import url("auth.css");
 @import url("testi-card.css");

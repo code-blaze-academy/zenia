@@ -23,6 +23,7 @@ function AudioSpeaker({ handleAssetData }) {
     SpeechRecognition.startListening({ continuous: true, language: "en-US" });
   const { transcript, browserSupportsSpeechRecognition } =
     useSpeechRecognition();
+    
 
   //   console.log(transcript);
   if (!browserSupportsSpeechRecognition) {

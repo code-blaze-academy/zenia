@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function HeroSection(props) {
   return (
-    <section className="hero-section">
+    <section className="hero-section mt-20">
       <h1
         data-aos="fade-up"
         data-aos-easing="ease-out-cubic"

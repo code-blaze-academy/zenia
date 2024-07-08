@@ -12,8 +12,8 @@ function Navbar() {
     <div className="navbar-container">
       <div className="flex-container-2">
         <div className="flex-item">
-          <Link to="/" className="logo-container text-[#000] lg:text-[#fff]">
-            Zenia
+          <Link to="/" className="logo-container">
+            <img src={`/assets/images/site-logo.svg`} alt="sovereign rock" />
           </Link>
         </div>
         <div className="flex-item">

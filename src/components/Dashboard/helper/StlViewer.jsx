@@ -10,7 +10,7 @@ const STLModel = ({ url }) => {
   return (
     <group ref={group} dispose={null}>
       <mesh geometry={geometry}>
-        <meshStandardMaterial color="#0f0" />
+        <meshStandardMaterial color="#d2d2d2" />
       </mesh>
     </group>
   );
@@ -21,7 +21,7 @@ const STLViewer = ({ assetData }) => {
 
   return (
     <Canvas
-      camera={{ position: [0, 0, 5], fov: 50 }}
+      camera={{ position: [0, -5, 0], fov: 50 }}
       style={{ background: "#f8f8f8", height: "100%" }} // Set the background color and height
     >
       <ambientLight intensity={0.5} />
