@@ -11,13 +11,14 @@ import STLViewer from "../helper/StlViewer";
 function IndexScreen(props) {
   const [assetData, setAssetData] = useState("");
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState("");
 
   const handleAssetData = async (message) => {
     const payload = {
       message_body: message,
     };
     setLoading(true);
-    const url = `http://192.81.210.127:2222/prompt/message/`;
+    const url = `http://198.7.121.174:4321/prompt/message/`;
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -30,24 +31,26 @@ function IndexScreen(props) {
         data: { status, stl_url },
       } = await response.json();
       setAssetData(stl_url);
-      localStorage.setItem("stl_url", stl_url);
       setLoading(false);
+
+      if(response.ok){
+          localStorage.setItem("stl_url", stl_url);
+      }
 
       // check if the response was not okay
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        setErrors("No assets found...!");
       }
     } catch (err) {
       if (err.message === "Failed to fetch") {
-        setAssetData(err.message);
+        setErrors("Network Error..!");
         setLoading(false);
       }
     }
   };
-  // console.log(assetData);
-  // handleAssetData("mary gear");
-  const readFile = `${process.env.PUBLIC_URL}/downloads/gear.stl`;
-  console.log(readFile);
+  console.log(errors);
+
+
   return (
     <div className="index-screen screen-wrapper lg:h-screen bg-[#D2D2D2]">
       <div className="grid-2 p-2 pt-8">
@@ -74,8 +77,14 @@ function IndexScreen(props) {
                 <Scene />
                 <STLViewer />
               </div> */}
-              {loading ? <Scene /> : assetData}
-              {/* <STLViewer /> */}
+              {loading ? (
+                <Scene />
+              ) : !assetData ? (
+                <p style={{ color: "#f00" }}>{errors}</p>
+              ) : (
+                <STLViewer assetData={assetData} />
+              )}
+              {/* <STLViewer assetData={assetData} /> */}
             </div>
             <div className="bottom-section absolute bottom-0 right-0">
               {/* <div className="flex  gap-4 items-end absolute bottom-4 right-4">

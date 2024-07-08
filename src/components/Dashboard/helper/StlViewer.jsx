@@ -16,8 +16,8 @@ const STLModel = ({ url }) => {
   );
 };
 
-const STLViewer = () => {
-  const stlUrl = `${process.env.PUBLIC_URL}/downloads/gear.stl`;
+const STLViewer = ({ assetData }) => {
+  const stlUrl = assetData;
 
   return (
     <Canvas

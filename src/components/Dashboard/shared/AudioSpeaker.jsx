@@ -48,10 +48,10 @@ function AudioSpeaker({ handleAssetData }) {
                       <p
                         className="text-[#0C8CE9]"
                         onClick={() => {
+                          handleAssetData(transcript);
                           SpeechRecognition.stopListening();
                           handleMicrophone();
                           setListening(false);
-                          handleAssetData("generate 3d gear");
                         }}
                       >
                         Send
