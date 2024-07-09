@@ -22,7 +22,7 @@ class BottleViewset(viewsets.ViewSet):
         return []
 
     def list(self,request):
-        (L, w, t) = (20.0, 6.0, 3.0)
+        (L, w, t) = (20.0, 6.0, 10.0)
         s = cq.Workplane("XY")
 
         # Draw half the profile of the bottle and extrude it

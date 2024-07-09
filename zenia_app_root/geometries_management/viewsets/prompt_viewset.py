@@ -10,6 +10,7 @@ class MessagePromptViewset(viewsets.ModelViewSet):
     permission_classes=[AllowAny]
     http_method_names=['post']
     serializer_class=MessagePrompt
+    
     def create(self,request):
         serializer=self.serializer_class(data=request.data)
         
@@ -22,52 +23,58 @@ class MessagePromptViewset(viewsets.ModelViewSet):
                 
                 return Response({"status":True,"message":"Text Recieved Successfully ready for processing",'data':response},status=status.HTTP_200_OK)
             
-            if 'gear' in str(serializer.validated_data['message_body']):
+            elif 'gear' in str(serializer.validated_data['message_body']):
                 response=requests.get(f"{base_url.url}complexshapes/gear/")
                 
                 response=response.json()
                 
                 return Response({"status":True,"message":"Text Recieved Successfully ready for processing",'data':response},status=status.HTTP_200_OK)
-            if 'hammer' in str(serializer.validated_data['message_body']):
+            elif 'hammer' in str(serializer.validated_data['message_body']):
                 response=requests.get(f"{base_url.url}complexshapes/hammer/")
                 
                 response=response.json()
                 
                 return Response({"status":True,"message":"Text Recieved Successfully ready for processing",'data':response},status=status.HTTP_200_OK)
-            if 'feeder' in str(serializer.validated_data['message_body']) and not ('hole' in str(serializer.validated_data['message_body'])):
+            elif 'feeder' in str(serializer.validated_data['message_body']) and not ('hole' in str(serializer.validated_data['message_body'])):
                 response=requests.get(f"{base_url.url}complexshapes/feeder/")
                 
                 response=response.json()
                 
                 return Response({"status":True,"message":"Text Recieved Successfully ready for processing",'data':response},status=status.HTTP_200_OK)
-            if 'savingbox' in str(serializer.validated_data['message_body']):
+            elif 'savingbox' in str(serializer.validated_data['message_body']):
                 response=requests.get(f"{base_url.url}complexshapes/savingbox/")
                 
                 response=response.json()
                 
                 return Response({"status":True,"message":"Text Recieved Successfully ready for processing",'data':response},status=status.HTTP_200_OK)
-            if 'bottle' in str(serializer.validated_data['message_body']) and not 'hole' in str(serializer.validated_data['message_body']):
+            elif 'bottle' in str(serializer.validated_data['message_body']) and not 'hole' in str(serializer.validated_data['message_body']):
                 response=requests.get(f"{base_url.url}complexshapes/bottle/")
                 
                 response=response.json()
                 
                 return Response({"status":True,"message":"Text Recieved Successfully ready for processing",'data':response},status=status.HTTP_200_OK)
-            if 'beam' in str(serializer.validated_data['message_body']) and not 'hole' in str(serializer.validated_data['message_body']):
+            elif 'beam' in str(serializer.validated_data['message_body']) and not 'hole' in str(serializer.validated_data['message_body']):
                 response=requests.get(f"{base_url.url}complexshapes/beam/")
                 
                 response=response.json()
                 
                 return Response({"status":True,"message":"Text Recieved Successfully ready for processing",'data':response},status=status.HTTP_200_OK)
-            if 'bottle' in str(serializer.validated_data['message_body']) and 'hole' in str(serializer.validated_data['message_body']):
+            elif 'bottle' in str(serializer.validated_data['message_body']) and 'hole' in str(serializer.validated_data['message_body']):
                 response=requests.get(f"{base_url.url}edit/holow/complexshapes/bottle/")
                 
                 response=response.json()
                 
                 return Response({"status":True,"message":"Text Recieved Successfully ready for processing",'data':response},status=status.HTTP_200_OK)
-            if 'feeder' in str(serializer.validated_data['message_body']) and  'hole' in str(serializer.validated_data['message_body']):
+            elif 'feeder' in str(serializer.validated_data['message_body']) and  'hole' in str(serializer.validated_data['message_body']):
                 response=requests.get(f"{base_url.url}edit/hollow/complexshapes/feeder/")
                 
                 response=response.json()
                 
                 return Response({"status":True,"message":"Text Recieved Successfully ready for processing",'data':response},status=status.HTTP_200_OK)
+            
+            else:
+        
+                
+                return Response({"status":False,"message":"Text Recieved Successfully ready for processing",'data':{"stl_url":None,"status":False,"message":"Assets not found"}},status=status.HTTP_404_NOT_FOUND)
+            
         return Response({"status":True,"message":"Text Recieved Successfully ready for processing"},status=status.HTTP_200_OK)

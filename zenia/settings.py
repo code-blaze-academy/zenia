@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-s$o9%q5_x@22o&$3v5cc%^gmd#9=ejdfu5q-b_p=y+&9&2_gm8
 DEBUG = True
 # DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['.applematch.com','198.7.121.174','localhost','127.0.0.1','*']
 
 
 # Application definition
@@ -45,17 +45,22 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "drf_yasg",
     "channels",
-    "zenia_app_root.geometries_management"
+    "zenia_app_root.geometries_management",
+    "django_extensions"
 ]
 
 MIDDLEWARE = [
-    "django.middleware.security.SecurityMiddleware",
-    "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
-    "django.contrib.auth.middleware.AuthenticationMiddleware",
-    "django.contrib.messages.middleware.MessageMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    
+    
 ]
 
 ROOT_URLCONF = "zenia.urls"
