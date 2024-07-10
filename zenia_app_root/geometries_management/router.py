@@ -11,7 +11,7 @@ from zenia_app_root.geometries_management.viewsets.bottle import  CreateHollowBo
 from zenia_app_root.geometries_management.viewsets.feeder import  CreateHollowFeederViewset
 from zenia_app_root.geometries_management.viewsets.beams import  BeamsViewset
 from zenia_app_root.geometries_management.viewsets.listofgeometries import  TotalListGeomeriesViewset
-
+from zenia_app_root.geometries_management.viewsets.hammer import HammerViewset
 
 
 
@@ -20,7 +20,7 @@ from zenia_app_root.geometries_management.viewsets.listofgeometries import  Tota
 
 
 router=routers.SimpleRouter()
-router.register(r'prompt/message',MessagePromptViewset,basename='prompt_message')
+router.register(r'message',MessagePromptViewset,basename='message')
 
 router.register(r'complexshapes/hammer',HammerViewset,basename='complexshapes_hammer')
 from zenia_app_root.geometries_management.viewsets.chair import  ChairViewset
@@ -36,6 +36,10 @@ router.register(r'complexshapes/bottle',BottleViewset,basename='complexshapes_bo
 
 router.register(r'complexshapes/chair',ChairViewset,basename='chair')
 router.register(r'complexshapes/beam',BeamsViewset,basename='beam')
+
+router.register(r'complexshapes/hammer',HammerViewset,basename='hammer')
+
+
 
 
 

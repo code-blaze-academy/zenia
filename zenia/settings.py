@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-s$o9%q5_x@22o&$3v5cc%^gmd#9=ejdfu5q-b_p=y+&9&2_gm8
 DEBUG = True
 # DEBUG = False
 
-ALLOWED_HOSTS = ['.applematch.com','198.7.121.174','localhost','127.0.0.1','*']
+ALLOWED_HOSTS = ['.applematch.com','198.7.121.174']
 
 
 # Application definition
