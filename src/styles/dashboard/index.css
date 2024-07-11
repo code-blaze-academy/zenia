@@ -16,7 +16,7 @@
   border-radius: 12px;
 }
 .dashboard-index .home-menu section {
-  padding: 1rem 2%;
+  padding: 1rem;
 }
 
 /* Side Menu */
@@ -24,12 +24,14 @@
   /* align-content: center; */
   align-content: flex-end;
   margin-bottom: 1rem;
+  font-size: 0.875rem;
 }
 .dashboard-index .side-menu a.active {
   background: #085d9b;
 }
 .dashboard-index .nested-side-menu li a {
-  padding-left: 6.5rem;
+  padding-left: 2rem;
+  font-size: 0.875rem;
 }
 
 .dashboard-index .side-menu .top-section {
@@ -40,15 +42,20 @@
 }
 
 /* Home Menu Styles */
-.dashboard-index .home-menu .flex-wrapper > * {
-  /* border: 1px solid red; */
+/* .dashboard-index .home-menu .flex-wrapper > * {
+  border: 1px solid yellow;
 }
+.dashboard-index .home-menu .flexed-files > * {
+  border: 1px solid red;
+} */
 .dashboard-index button {
   border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  font-size: 0.875rem;
 }
 .dashboard-index button.active {
   background: #085d9b;
-  color: #fff;
 }
 .dashboard-index .home-menu .form-field input {
   background: #1b1b1c;

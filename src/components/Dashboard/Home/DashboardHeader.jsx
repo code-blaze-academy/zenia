@@ -19,8 +19,8 @@ function DashboardHeader({ modal, toggleModal, navigate, heading }) {
                 </div>
               </form>
             </div>
-            <div className="flex-item basis-[48%] flex gap-[4%]">
-              <div className="btn-container">
+            <div className="flex-item flexed-files basis-[48%] flex gap-[4%]">
+              <div className="btn-container basis-[48%]">
                 <button
                   className="active"
                   onClick={() => {
@@ -30,7 +30,7 @@ function DashboardHeader({ modal, toggleModal, navigate, heading }) {
                   <span>new file</span>
                 </button>
               </div>
-              <div className="btn-container">
+              <div className="btn-container basis-[48%]">
                 <button onClick={toggleModal}>
                   <span>new folder</span>
                 </button>

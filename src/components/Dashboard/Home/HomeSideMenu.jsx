@@ -7,7 +7,7 @@ import LearnIcon from "../../icons/LearnIcon";
 function HomeSideMenu({ handleActiveSideMenuLink, addFolder, projectItems }) {
   return (
     <div className="menu-container">
-      <div className="top-section p-2 mb-4">
+      <div className="top-section p-[1rem] mb-4">
         <div className="flex gap-2 items-center p-4 mb-2">
           <div className="flex-item">
             <p className="initial uppercase w-[36px] h-[36px] bg-[#ffcd29] sailec-medium">
@@ -27,7 +27,7 @@ function HomeSideMenu({ handleActiveSideMenuLink, addFolder, projectItems }) {
                 onClick={(e) => {
                   handleActiveSideMenuLink(e);
                 }}
-                className="active link-item flex items-center gap-4 px-16"
+                className="active link-item flex items-center gap-4 px-[1rem]"
                 to="/dashboard"
               >
                 <span className="icon-container inline-block align-middle">
@@ -41,7 +41,7 @@ function HomeSideMenu({ handleActiveSideMenuLink, addFolder, projectItems }) {
                 onClick={(e) => {
                   handleActiveSideMenuLink(e);
                 }}
-                className="link-item flex items-center gap-4 px-16"
+                className="link-item flex items-center gap-4 px-[1rem]"
                 to="/dashboard/projects"
               >
                 <span className="icon-container inline-block align-middle">
@@ -68,7 +68,7 @@ function HomeSideMenu({ handleActiveSideMenuLink, addFolder, projectItems }) {
                 onClick={(e) => {
                   handleActiveSideMenuLink(e);
                 }}
-                className="link-item flex items-center gap-4 px-16"
+                className="link-item flex items-center gap-4 px-[1rem]"
                 to="/dashboard/learn"
               >
                 <span className="icon-container inline-block align-middle">
