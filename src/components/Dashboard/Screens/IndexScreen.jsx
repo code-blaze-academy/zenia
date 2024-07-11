@@ -18,7 +18,7 @@ function IndexScreen(props) {
       message_body: message,
     };
     setLoading(true);
-    const url = `http://198.7.121.174:4321/prompt/message/`;
+    const url = `https://zenia.applematch.com/prompt/message/`;
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -33,8 +33,8 @@ function IndexScreen(props) {
       setAssetData(stl_url);
       setLoading(false);
 
-      if(response.ok){
-          localStorage.setItem("stl_url", stl_url);
+      if (response.ok) {
+        localStorage.setItem("stl_url", stl_url);
       }
 
       // check if the response was not okay
@@ -49,7 +49,6 @@ function IndexScreen(props) {
     }
   };
   console.log(errors);
-
 
   return (
     <div className="index-screen screen-wrapper lg:h-screen bg-[#D2D2D2]">
