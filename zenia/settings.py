@@ -46,7 +46,10 @@ INSTALLED_APPS = [
     "drf_yasg",
     "channels",
     "zenia_app_root.geometries_management",
-    "django_extensions"
+    "django_extensions",
+    "zenia_app_root.security",
+    "zenia_app_root.security.auth",
+    "zenia_app_root.security.user"
 ]
 
 MIDDLEWARE = [
@@ -87,13 +90,22 @@ WSGI_APPLICATION = "zenia.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'zeniadb',
+        'USER': 'zeniadbuser',
+        'PASSWORD': 'APPLEmatch24!',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -125,7 +137,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+AUTH_USER_MODEL = 'zenia_app_root_security_user.User'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
@@ -143,7 +155,7 @@ STATIC_ROOT=os.path.join(BASE_DIR,'static')
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
-    'rest_framework.permissions.AllowAny',
+    'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
     'rest_framework_simplejwt.authentication.JWTAuthentication',

@@ -34,7 +34,7 @@ class GearViewset(viewsets.ViewSet):
             )
 
 
-        def gear(t, r1=4, r2=1):
+        def gear(t, r1=2, r2=0.5):
             if (-1) ** (1 + floor(t / 2 / pi * (r1 / r2))) < 0:
                 return epicycloid(t, r1, r2)
             else:
@@ -44,11 +44,11 @@ class GearViewset(viewsets.ViewSet):
         # create the gear profile and extrude it
         result = (
             cq.Workplane("XY")
-            .parametricCurve(lambda t: gear(t * 2 * pi, 6, 1))
-            .twistExtrude(15, 90)
+            .parametricCurve(lambda t: gear(t * 2 * pi, 1, 0.3))
+            .twistExtrude(0.5, 2)
             .faces(">Z")
             .workplane()
-            .circle(2)
+            .circle(1)
             .cutThruAll()
         )
         stl_path = os.path.join('threedmodels', "gear.stl")

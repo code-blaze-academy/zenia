@@ -49,7 +49,8 @@ urlpatterns = [
     path('',include(('zenia_app_root.geometries_management.router'))),
     
     path('',include(('zenia_app_root.geometries_management.routers.message_prompt','zenia_app_root.geometries_management.routers'))),
-
+    path('',include(('zenia_app_root.security.user.routers','zenia_app_root.security.user'))),
+    path('',include(('zenia_app_root.security.auth.routers','zenia_app_root.security.auth'))),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
 if settings.DEBUG:
