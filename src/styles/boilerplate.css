@@ -206,6 +206,9 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 25px;
   height: 25px;
 }
+.form-field .eye-icon-container.active svg path {
+  stroke: cyan;
+}
 
 /* ==============Message info============ */
 .form-container .error-message {

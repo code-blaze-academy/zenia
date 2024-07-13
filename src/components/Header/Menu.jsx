@@ -14,15 +14,15 @@ function Menu() {
         <li>
           <Link to="/">home</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="#">about us</Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="#">contact us</Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="#">products</Link>
-        </li>
+        </li> */}
         <li>
           <Link className="btn-container" to="/register">
             <button className="cta-btn">signup</button>
