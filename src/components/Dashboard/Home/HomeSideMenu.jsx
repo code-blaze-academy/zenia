@@ -21,7 +21,7 @@ function HomeSideMenu({
           </div>
           <div className="flex-item">
             <p className="username capitalize sailec-medium">
-              {userData.username}
+              {userData?.username}
             </p>
           </div>
         </div>
