@@ -84,7 +84,7 @@ function DashboarHome({ heading, children }) {
           Please{" "}
           <Link
             className="inline-block text-xl font-bold text-[#3a8d97]"
-            href="/login"
+            to="/login"
           >
             login
           </Link>{" "}

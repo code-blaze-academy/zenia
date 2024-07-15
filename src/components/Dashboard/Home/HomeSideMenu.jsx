@@ -4,7 +4,12 @@ import HomeDashboardIcon from "../../icons/HomeDashboardIcon";
 import ProjectIcon from "../../icons/ProjectIcon";
 import LearnIcon from "../../icons/LearnIcon";
 
-function HomeSideMenu({ handleActiveSideMenuLink, addFolder, projectItems }) {
+function HomeSideMenu({
+  handleActiveSideMenuLink,
+  addFolder,
+  projectItems,
+  userData,
+}) {
   return (
     <div className="menu-container">
       <div className="top-section p-[1rem] mb-4">
@@ -15,7 +20,9 @@ function HomeSideMenu({ handleActiveSideMenuLink, addFolder, projectItems }) {
             </p>
           </div>
           <div className="flex-item">
-            <p className="username capitalize sailec-medium">Solomon</p>
+            <p className="username capitalize sailec-medium">
+              {userData.username}
+            </p>
           </div>
         </div>
       </div>
