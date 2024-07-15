@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Toaster, toast } from "react-hot-toast";
 import EyeIcon from "../icons/EyeIcon";
 
 function Login(props) {
+  const navigate = useNavigate();
   const [continueWithEmail, setContinueWithEmail] = useState(false);
   const [loading, setLoading] = useState(false);
   const [password, setPassword] = useState(false);
@@ -13,8 +14,8 @@ function Login(props) {
   });
 
   // saved login id to loacal storage
-  const addToLocalStorage = (token) => {
-    localStorage.setItem("auth-token", token);
+  const addToLocalStorage = (userId) => {
+    localStorage.setItem("user_id", userId);
   };
 
   // handle form validator
@@ -69,8 +70,14 @@ function Login(props) {
           throw new Error(resObj.detail);
           // setLoading(false);
         }
+        addToLocalStorage(resObj?.user?.id);
         toast.success("Login successful");
         setLoading(false);
+
+        // Login the user after 3 seconds
+        setTimeout(() => {
+          navigate("/dashboard");
+        }, 3000);
       } else {
         toast.error(errorsValues[0]);
         setLoading(false);

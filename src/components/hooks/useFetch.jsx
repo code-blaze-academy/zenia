@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-function useFetch(props) {
+function useFetch(id) {
   const [data, setData] = useState({
     isLoading: false,
     apiData: undefined,
     serverError: null,
   });
   useEffect(() => {
-    const fetchData = async (id) => {
+    const fetchData = async () => {
       if (!id) return;
 
       //  other conditions
