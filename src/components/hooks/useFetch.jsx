@@ -15,11 +15,13 @@ function useFetch(id) {
       try {
         setData((prev) => ({ ...prev, isLoading: true }));
         const response = await fetch(url);
+        // console.log(response);
         const resObj = await response.json();
 
-        if (response.status) {
+        if (response.status === 200) {
           setData((prev) => ({ ...prev, isLoading: false }));
           setData((prev) => ({ ...prev, apiData: resObj }));
+          localStorage.setItem("api_data", JSON.stringify(resObj));
         }
 
         setData((prev) => ({ ...prev, isLoading: false }));

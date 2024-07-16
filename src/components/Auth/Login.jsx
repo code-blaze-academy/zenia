@@ -70,7 +70,8 @@ function Login(props) {
           throw new Error(resObj.detail);
           // setLoading(false);
         }
-        addToLocalStorage(resObj?.user?.id);
+        console.log(resObj?.response_data?.user?.id);
+        addToLocalStorage(resObj?.response_data?.user?.id);
         toast.success("Login successful");
         setLoading(false);
 

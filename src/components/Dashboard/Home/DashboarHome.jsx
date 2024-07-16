@@ -68,7 +68,7 @@ function DashboarHome({ heading, children }) {
 
   const [{ isLoading, apiData, serverError }] = useFetch(`${userId}`);
 
-  const userData = apiData?.user;
+  const userData = apiData;
   // console.log(userData);
   if (isLoading)
     return (

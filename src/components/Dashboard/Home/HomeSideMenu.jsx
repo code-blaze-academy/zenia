@@ -10,13 +10,15 @@ function HomeSideMenu({
   projectItems,
   userData,
 }) {
+
+  
   return (
     <div className="menu-container">
       <div className="top-section p-[1rem] mb-4">
         <div className="flex gap-2 items-center p-4 mb-2">
           <div className="flex-item">
             <p className="initial uppercase w-[36px] h-[36px] bg-[#ffcd29] sailec-medium">
-              s
+              {userData?.username.split("")[0]}
             </p>
           </div>
           <div className="flex-item">
