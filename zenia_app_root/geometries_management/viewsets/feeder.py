@@ -54,9 +54,9 @@ class CreateHollowFeederViewset(viewsets.ViewSet):
         .hole(1.0, depth=4.0)  # Create a hole with a diameter of 1.0 and a depth of 4.0
         )
 
-        stl_path = os.path.join('threedmodels', "feeder.stl")
+        stl_path = os.path.join('threedmodels', "feeder_hole.stl")
         exporters.export(result,stl_path)
         return Response({'status':True,
-            'stl_url': request.build_absolute_uri(f'/threedmodels/feeder.stl'),
+            'stl_url': request.build_absolute_uri(f'/threedmodels/feeder_hole.stl'),
         },status=status.HTTP_200_OK)
         

@@ -5,6 +5,6 @@ sudo apt-get install python3-dev portaudio19-dev
 
 sudo systemctl restart nginx
 
-sudo service gunicorn restart
+sudo service gunicorn_zenia restart
 
 sudo service nginx restart

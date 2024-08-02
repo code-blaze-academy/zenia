@@ -12,11 +12,14 @@ from zenia_app_root.geometries_management.viewsets.feeder import  CreateHollowFe
 from zenia_app_root.geometries_management.viewsets.beams import  BeamsViewset
 from zenia_app_root.geometries_management.viewsets.listofgeometries import  TotalListGeomeriesViewset
 from zenia_app_root.geometries_management.viewsets.hammer import HammerViewset
+from zenia_app_root.geometries_management.viewsets.cuboid import CuboidViewset
+from zenia_app_root.geometries_management.viewsets.cuboid import CreateHoleCuboidViewset
+
+from zenia_app_root.geometries_management.viewsets.cone import ConeViewset
+from zenia_app_root.geometries_management.viewsets.cadupload import NumberCadViewset
 
 
-
-
-
+# from zenia_app_root.geometries_management.viewsets.door import 
 
 
 router=routers.SimpleRouter()
@@ -34,23 +37,25 @@ router.register(r'complexshapes/savingbox',SavingBoxViewset,basename='complexsha
 router.register(r'complexshapes/bottle',BottleViewset,basename='complexshapes_bottle')
 
 
+
 router.register(r'complexshapes/chair',ChairViewset,basename='chair')
 router.register(r'complexshapes/beam',BeamsViewset,basename='beam')
 
 router.register(r'complexshapes/hammer',HammerViewset,basename='hammer')
+# router.register(r'complexshapes/door',DoorViewset,basename='door')
 
+router.register(r'basicshapes/cuboid',CuboidViewset,basename='cuboid')
+router.register(r'basicshapes/cone',ConeViewset,basename='cone')
+router.register(r'modify/basicshapes/numbercad',NumberCadViewset,basename='numbercad')
 
-
-
+router.register(r'edit/hollow/simpleshapes/cuboid',CreateHoleCuboidViewset,basename='edithollowcuboid')
+# router.register(r'edit/hollow/simpleshapes/cuboid',CreateHoleCubeViewset,basename='edithollowcuboid')
 
 
 router.register(r'edit/hollow/complexshapes/feeder',CreateHollowFeederViewset,basename='edithollowfeeder')
 router.register(r'edit/hollow/complexshapes/bottle',CreateHollowBottleViewset,basename='edithollowbottle')
 
 
-urlpatterns=[
-    *router.urls
-]
 # router.register(r'complexshapes/chair',ChairViewset,basename='complexshapes')
 
 

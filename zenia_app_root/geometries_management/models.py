@@ -48,3 +48,10 @@ class MessagePromptModel(models.Model):
     def __str__(self):
         return str(self.message_body)
     
+
+
+class CadModelUpload(models.Model):
+    stl_file_upload=models.FileField(upload_to="home/zenia_user/zenia/threedmodels/modification/")
+    
+    def __str__(self):
+        return str(self.message_body)

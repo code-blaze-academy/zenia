@@ -73,27 +73,29 @@ class RegisterViewSet(viewsets.ModelViewSet):
             password_length=int(len(serializer.initial_data['password']))
             print(password_length)
             print(type(password_length))
-            error_list={}
+            error_list=[]
             if not serializer.is_valid():
                 print("not valid")
                 if User.objects.filter(email=email).exists():
                     # return Response({'message':'User with this email already exists','error':True,'field':'email'},status=status.HTTP_403_FORBIDDEN)
-                    error_list['email_error']='User with this email already exists'
+                    email_error='User with this email already exists'
+                    error_list.append(email_error)
                 if password_length<8:
                     # print(password_length)
                     # print(type(password_length))
-                    error_list['password_error']='Password should be at least 8 characters'
-
+                    password_error='Password should be at least 8 characters'
+                    error_list.append(password_error)
                 
                 if User.objects.filter(username=username).exists():
-                    error_list['username_error']='username exist'
-                # if str(serializer.initial_data['confirm_password'])!=str(serializer.initial_data['password']):
-                    # error_list['password_mismatch_error']='Password mismatch for confirm password'
-                if str(serializer.initial_data['password'])!=str(serializer.initial_data['confirm_password']):
-                    error_list['error_msg']="Password mismatch"
-                # error_list['error_msg']='Could not create account'
-                error_list['status']=False
-                return Response({'error_list':error_list},status=status.HTTP_406_NOT_ACCEPTABLE)
+                    username_error='username exist'
+                    error_list.append(username_error)
+                if str(serializer.initial_data['confirm_password'])is not str(serializer.initial_data['password']):
+                    password_mismatch_error='Password mismatch for confirm password'
+                
+                    error_list.append(password_mismatch_error)
+                
+                error_list=error_list
+                return Response({'error_message':error_list[0],'status':False},status=status.HTTP_406_NOT_ACCEPTABLE)
             # if serializer.is_valid():
             else:
                 
