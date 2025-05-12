@@ -67,7 +67,8 @@ function Register(props) {
       password: user.password,
       confirm_password: user.confirm_password,
     };
-    const url = `https://zenia.applematch.com/register/`;
+    // const url = `https://zenia.applematch.com/register/`;
+    const url = `https://zeniaapi.duckdns.org/register/`;
     const params = {
       method: "POST",
       headers: {

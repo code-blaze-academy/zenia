@@ -76,22 +76,23 @@ function DashboarHome({ heading, children }) {
         <p className="m-auto">Loading Zenia dashboard...</p>
       </div>
     );
-  if (!userId)
-    return (
-      <div className="flex flex-col justify-center h-screen items-center text-xl">
-        <h1 className="text-xl text-red-500">Session Expired</h1>
-        <p>
-          Please{" "}
-          <Link
-            className="inline-block text-xl font-bold text-[#3a8d97]"
-            to="/login"
-          >
-            login
-          </Link>{" "}
-          to contnue
-        </p>
-      </div>
-    );
+  if (!userId)navigate("/login");
+    // return (
+    //   <div className="flex flex-col justify-center h-screen items-center text-xl">
+    //     <h1 className="text-xl text-red-500">Session Expired</h1>
+    //     <p> 
+    //       Please{" "}
+    //       <Link
+    //         className="inline-block text-xl font-bold text-[#3a8d97]"
+    //         to="/login"
+    //       >
+    //         login
+    //       </Link>{" "}
+    //       to contnue
+    //     </p>
+        
+    //   </div>
+    // );
   return (
     <div className="dashboard-index dashboard-container lg:h-screen">
       <div className="grid-2 p-2">

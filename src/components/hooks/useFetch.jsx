@@ -11,7 +11,8 @@ function useFetch(id) {
       if (!id) return;
 
       //  other conditions
-      const url = `https://zenia.applematch.com/user/${id}/`;
+      
+      const url = `https://zeniaapi.duckdns.org/user/${id}/`;
       try {
         setData((prev) => ({ ...prev, isLoading: true }));
         const response = await fetch(url);

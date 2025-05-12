@@ -51,7 +51,7 @@ function Login(props) {
       email: user.email,
       password: user.password,
     };
-    const url = `https://zenia.applematch.com/login/`;
+    const url = `https://zeniaapi.duckdns.org/login/`;
     const params = {
       method: "POST",
       headers: {

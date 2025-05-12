@@ -18,7 +18,7 @@ function IndexScreen(props) {
       message_body: message,
     };
     setLoading(true);
-    const url = `https://zenia.applematch.com/prompt/message/`;
+    const url = `https://zeniaapi.duckdns.org/prompt/message/`;
     try {
       const response = await fetch(url, {
         method: "POST",

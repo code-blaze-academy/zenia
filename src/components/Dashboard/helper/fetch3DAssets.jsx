@@ -11,7 +11,7 @@ export default function use3DAssets(message) {
       const payload = {
         message_body: message,
       };
-      const url = `http://192.81.210.127:2222/prompt/message/`;
+      const url = `https://zeniaapi.duckdns.org/prompt/message/`;
       try {
         const response = await fetch(url, {
           method: "POST",
