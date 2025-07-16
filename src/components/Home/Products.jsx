@@ -51,7 +51,7 @@ function Products({ products }) {
           <span>Design ready models</span>
         </h6>
         <div className="text-wrapper mb-12">
-          <h2 className="mt-4 text-lower mb-8">Made in Zenia</h2>
+          <h2 className="mt-4 text-lower mb-8">Made in Xpress Cad</h2>
         </div>
       </div>
       {

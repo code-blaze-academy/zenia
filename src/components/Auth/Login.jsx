@@ -100,10 +100,10 @@ function Login(props) {
         <div className="auth-container">
           <div className="form-container">
             <Link className="logo" to="/">
-              <h1>zenia</h1>
+              <h1>Xpress Cad</h1>
             </Link>
             <form onSubmit={handleSubmit}>
-              <h2>login to zenia</h2>
+              <h2>login to xpress cad</h2>
               <div className="continue-btns">
                 <div className="btn-container">
                   <button className="cta-btn google-btn">

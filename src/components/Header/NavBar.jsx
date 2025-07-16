@@ -13,7 +13,7 @@ function Navbar() {
       <div className="flex-container-2">
         <div className="flex-item">
           <Link to="/" className="logo-container text-[#000] lg:text-[#fff]">
-            Zenia
+            Xpress Cad
           </Link>
         </div>
         <div className="flex-item">

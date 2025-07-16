@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Toaster, toast } from "react-hot-toast";
 import EyeIcon from "../icons/EyeIcon";
 
@@ -15,6 +15,7 @@ function Register(props) {
     confirm_password: "",
   });
 
+  const navigate = useNavigate();
   // handle form validator
   const validateForm = () => {
     const errors = {};
@@ -90,6 +91,7 @@ function Register(props) {
         const resObj = await response.json();
         toast.success(resObj.detail);
         setLoading(false);
+        navigate("/login")
       } else {
         toast.error(errorsValues[0]);
         setLoading(false);
@@ -113,7 +115,7 @@ function Register(props) {
           <div className="auth-container">
             <div className="form-container">
               <Link className="logo" to="/">
-                <h1>zenia</h1>
+                <h1>Xpress Cad</h1>
               </Link>
               <form onSubmit={handleSubmit}>
                 <h2>create an account</h2>

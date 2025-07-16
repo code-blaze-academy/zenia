@@ -73,7 +73,7 @@ function DashboarHome({ heading, children }) {
   if (isLoading)
     return (
       <div className="flex justify-center h-screen items-center text-xl">
-        <p className="m-auto">Loading Zenia dashboard...</p>
+        <p className="m-auto">Loading Xpress Card dashboard...</p>
       </div>
     );
   if (!userId)navigate("/login");
